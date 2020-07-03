@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1AB4FCDE-843A-49BE-ADCC-2202A3C76CBD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Basic</RootNamespace>
+    <AssemblyName>Basic</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MySql.Data, Version=8.0.16.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="custcreateac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="custcreateac.Designer.cs">
+      <DependentUpon>custcreateac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="custui.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="custui.designer.cs">
+      <DependentUpon>custui.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DIC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DIC.designer.cs">
+      <DependentUpon>DIC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dic_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dic_add.designer.cs">
+      <DependentUpon>dic_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dic_mod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dic_mod.designer.cs">
+      <DependentUpon>dic_mod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DID.designer.cs">
+      <DependentUpon>DID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="did_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="did_add.Designer.cs">
+      <DependentUpon>did_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="did_mod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="did_mod.designer.cs">
+      <DependentUpon>did_mod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="salesRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="salesRecord.Designer.cs">
+      <DependentUpon>salesRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsReceivedNotes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodsReceivedNotes.designer.cs">
+      <DependentUpon>GoodsReceivedNotes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="grn_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="grn_add.Designer.cs">
+      <DependentUpon>grn_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="grn_mod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="grn_mod.designer.cs">
+      <DependentUpon>grn_mod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="homePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="homePage.designer.cs">
+      <DependentUpon>homePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory Detail.Designer.cs">
+      <DependentUpon>Inventory Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginui.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginui.Designer.cs">
+      <DependentUpon>loginui.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ordering.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ordering.designer.cs">
+      <DependentUpon>ordering.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="forget.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forget.Designer.cs">
+      <DependentUpon>forget.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sdpDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sdpDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stockRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stockRecord.designer.cs">
+      <DependentUpon>stockRecord.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="custcreateac.resx">
+      <DependentUpon>custcreateac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custui.resx">
+      <DependentUpon>custui.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DIC.resx">
+      <DependentUpon>DIC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dic_add.resx">
+      <DependentUpon>dic_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dic_mod.resx">
+      <DependentUpon>dic_mod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DID.resx">
+      <DependentUpon>DID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="did_add.resx">
+      <DependentUpon>did_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="did_mod.resx">
+      <DependentUpon>did_mod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="salesRecord.resx">
+      <DependentUpon>salesRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodsReceivedNotes.resx">
+      <DependentUpon>GoodsReceivedNotes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="grn_add.resx">
+      <DependentUpon>grn_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="grn_mod.resx">
+      <DependentUpon>grn_mod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="homePage.resx">
+      <DependentUpon>homePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory Detail.resx">
+      <DependentUpon>Inventory Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginui.resx">
+      <DependentUpon>loginui.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ordering.resx">
+      <DependentUpon>ordering.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="forget.resx">
+      <DependentUpon>forget.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stockRecord.resx">
+      <DependentUpon>stockRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="sdpDataSet.xsc">
+      <DependentUpon>sdpDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="sdpDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sdpDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sdpDataSet.xss">
+      <DependentUpon>sdpDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CompanyName.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
